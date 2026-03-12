@@ -6,9 +6,7 @@ import java.util.List;
 public class CustomList {
     private List<City> cities;
 
-    public CustomList() {
-        this.cities = new ArrayList<>();
-    }
+    public CustomList() {this.cities = new ArrayList<>();}
 
     public void addCity(City city) {
         cities.add(city);
@@ -18,4 +16,9 @@ public class CustomList {
 
     // Will be implemented later using TDD (leave blank for now)
     // public boolean hasCity(City city) { ... }
+
+    //add this to pass the test
+    public boolean hasCity(City city) {
+        return cities.contains(city);
+    }
 }
